@@ -71,7 +71,7 @@ section{
 	height: 100vh;
 	width: 100vw;
 	position: relative;
-	background: url(background.jpg);
+	
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -109,7 +109,26 @@ span{
 	border: 1px solid var(--main-color);
 	transition: all .20s ease;
 }
+
+.btn1{
+	display: inline-block;
+	margin-left: 12px;
+	padding: 14px 60px;
+	border-radius: 0.5rem;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	border: 1px solid var(--main-color);
+	transition: all .20s ease;
+}
 .btn:hover{
+	transform: scale(1.01) translateY(-5px);
+	background: transparent;
+	border: 1px solid var(--main-color);
+}
+
+.btn1:hover{
 	transform: scale(1.01) translateY(-5px);
 	background: transparent;
 	border: 1px solid var(--main-color);
@@ -165,7 +184,7 @@ span{
     left:50%;
     transform :translate(-50%,-50%);
     border-radius: 50%;
-    width:150%;
+    width:150px;
     height:80px;
     background: rgba(255,255,255,0.05);
 }
@@ -173,14 +192,14 @@ span{
 .liquid{
 
     position: absolute;
-    top: 54%;
+    top: 50%;
     left: 5px;
     right: 5px;
     bottom:5px;
     background: #41c1fb;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
-    filter: drop-shadow(220 220 3000px #41c1fb);
+    filter: drop-shadow(0 0 80px #41c1fb);
     transform-origin: top center;
     animation: animate-liquid 5s linear infinite;
 }
@@ -216,13 +235,13 @@ span{
 }
 
 .shadow{
-    position:absolute;
-    top:calc(50% + 150px);
+    position:relative;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 300px;
     height:30px;
-    background:rgba(0,0,0,0.05);
+	bottom : 20%; 
+    background:rgba(255,0,0,0.05);
     border-radius: 50%;
 }
 
@@ -639,14 +658,22 @@ margin:100px 0;
 		width :200px;
 		height: 200px;
 		right:20%;
-		left:10%;
-		
+		left:0%;	
+	}
+
+	.shadow{
+		left: 17%;
+		top: 3%;
 	}
 
 	.portfolio-content{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 		
+	}
+	.btn1{
+		margin-top: 10px;
+		margin-left: 0%;
 	}
 
 	.row img{
