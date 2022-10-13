@@ -67,6 +67,10 @@ header{
 section{
 	padding: 160px 16% 90px;
 }
+
+ .contact{
+	padding:0px 16% 0px;
+}
 .home{
 	height: 100vh;
 	width: 100vw;
@@ -269,6 +273,8 @@ header.sticky{
 }
 .about-text p{
 	color: var(--second-color);
+	filter: brightness(120%);
+	letter-spacing: 0.7px;
 	font-size: var(--p-font);
 	line-height: 30px;
 	margin-bottom: 2rem;
@@ -473,6 +479,7 @@ form textarea{
 .skill-section {
 position: relative;
 margin:100px 0;
+padding-top:50px;
 
 }
 
@@ -506,6 +513,8 @@ margin:100px 0;
     height:120px ;
     color: white;
   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  box-shadow: 0px 15px 50px 3px #B1B1B1;
+	  transition: all .20s ease;
 }
 
 .skill-name{
@@ -549,9 +558,9 @@ margin:100px 0;
     color:#4fa0ff;
 }
 .skill-card:nth-child(3) .skill-level{
-    background: #ffed4f28;
-    border-color: #ffed4f28;
-    color:#ffed4f;
+    background: #52ff4f28;
+    border-color: #52ff4f;
+    color:#52ff4f;
 }
 .skill-card:nth-child(4) .skill-level{
     background: #52ff4f28;
@@ -593,7 +602,8 @@ margin:100px 0;
 		padding: 70px 3% 60px;
 	}
 	.home{
-		height: 85vh;
+		height: 70vh;
+		margin-top:80px ;
 	}
 
 	
@@ -602,6 +612,7 @@ margin:100px 0;
 	}
 	.about-img{
 		text-align: center;
+		height: 280px;
 	}
 	
 
@@ -615,7 +626,7 @@ margin:100px 0;
 	}
 
 	.bowl{
-		top:40%;
+		top:30%;
 		position:relative;
 		width :200px;
 		height: 200px;
@@ -626,7 +637,7 @@ margin:100px 0;
 	.shadow{
 		
 		left: 27%;
-		bottom: 20%;
+		bottom: 0%;
 	}
 	
 	
@@ -644,9 +655,11 @@ margin:100px 0;
 		display: flex;
 		flex-direction: column;
 		background: #12141c;
-		text-align: left;
+		text-align: center;
 		transition: all .20s ease;
 	}
+
+	
 	.navbar a{
 		display: block;
 		padding: 1rem;
@@ -655,6 +668,15 @@ margin:100px 0;
 	.navbar.active{
 		top: 100%;
 	}
+
+	.skill-section{
+		margin: 3rem 0;
+	}
+
+	.skill-section .heading{
+		margin-bottom: 3rem;
+	}
+
 	.skills-container{
 		grid-template-columns: repeat(2,0.5fr);
 		grid-template-rows: repeat(2,0.5fr);
@@ -677,6 +699,7 @@ margin:100px 0;
 		line-height: 15px;
 		font-size: 15px;
 	}
+
 
 	.skill-level{
 		position: absolute;
@@ -712,6 +735,37 @@ margin:100px 0;
 		margin-top: 10px;
 		margin-left: 0%;
 	}
+	.home{
+		height: 65vh;
+		margin-top:70px;
+	}
+
+	.about-img{
+		text-align: center;
+		height: 310px;
+	}
+
+	.portfolio{
+		padding-bottom:0px;
+	}
+
+	.contact-text p{
+		margin: 0px;
+	}
+
+	.contact-list {
+		margin-bottom: 0.5rem;
+	  }
+
+	.contact{
+		gap:1rem;
+		padding:3rem;
+	}
+
+	.contact-form form .send{
+		width:120px;
+
+	}
 
 	.row img{
 		height: 20%;
@@ -730,4 +784,75 @@ margin:100px 0;
 		--h1-font: 3.7rem;
 	    --h2-font: 2.7rem;
 	}
+}
+
+
+
+@media (max-width: 410px){
+	.navbar{
+		top:-900px;
+	}
+
+	.home{
+		margin-top:100px;
+	}
+
+	.home-text h1{
+		font-size: 3rem;
+		padding:0 4px;
+	}
+
+	.home-text h4{
+		padding:0 4px;
+	}
+	
+
+	.bowl{
+		top:50%;
+		position:relative;
+		width :160px;
+		height: 150px;
+		right:20%;
+		left:0%;	
+	}
+
+	.shadow{
+		
+		left: 16%;
+		top: 3%;
+	}
+
+	
+
+	.btn1{
+		
+		width: 30px;
+	}
+
+	.btn{
+		display: inline-block;
+		padding: 14px 20px;
+		border-radius: 0.5rem;
+		font-size: 17px;
+		font-weight: 500;
+		
+	}
+
+	
+
+	.about-img{
+		text-align: center;
+		height: 230px;
+	}
+
+	.skill-section{
+		margin: 3rem 0;
+		right:15px;
+	}
+
+	.contact{
+		
+		padding:1rem;
+	}
+
 }

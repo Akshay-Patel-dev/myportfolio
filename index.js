@@ -19,12 +19,12 @@ window.onscroll = () => {
 
 const sr = ScrollReveal ({
 	distance: '25px',
-	duration: 2500,
+	duration: 1500,
 	reset: true
 })
 
 
 
-sr.reveal('.home-text',{delay:190, origin:'bottom'})
+sr.reveal('.home-text',{delay:150, origin:'bottom'})
 
-sr.reveal('.about,.services,.portfolio,.skill-section,.contact',{delay:200, origin:'bottom'})
+sr.reveal('.about,.services,.portfolio,portfolio-content,.skill-section,.contact',{delay:150, origin:'bottom'})
